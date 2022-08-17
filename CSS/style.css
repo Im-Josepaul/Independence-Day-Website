@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#bg{
+    background-color: white;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+#bg::-webkit-scrollbar {
+    display: none;
+  }
+
+/* Contents of First Page*/
+.first-page{
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.first-page h1{
+    position: absolute;
+    bottom: 2vw;
+    left: 13vw;
+    right: 1vw;
+    font-size: 6vw;
+    width: auto;
+    height: auto;
+    color: #54BAB9;
+    font-weight: 600;
+    transition: 0.5s;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.first-page h1:hover{
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+}
+.fade{
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-zoom-animation: fadeIn 3s;
+}
+
+.video{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Contents of Introduction*/
+#intro-page{
+    padding: 5% 5% 5%;
+    position: relative;
+    background-color: #d67e27;
+    width: 100vw;
+    height: auto;
+}
+
+.poster{
+    position: absolute;
+    right: 3%;
+    top: 19vh;
+    padding-bottom: 1%;
+    width: 20vw;
+    height: 45vh;
+}
+.content{
+    font-size: 1.5vw;
+    width: 75%;
+}
+.con_head{
+    font-size: 2vw;
+}
+
+
+/* Contents of Freedom Fighters*/
+#freedom-page{
+    padding: 5% 5% 2%;
+    position: relative;
+    width: 100%;
+    height: 1200px;
+}
+
+/* Images */
+.image:hover{
+    transform: scale(1.1);
+}
+
+table{
+    width: 95vw;
+    padding-left: 2%;
+}
+table td{
+    padding: 3.5%;
+}
+
+/* Footer */
+#footer{
+    width: 100vw;
+    height: 150px;
+    position: relative;
+    background-color: #499212;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+#footer p{
+    position: relative;
+    top: 25%;
+    font-weight: 600;
+}
+.icons{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 35%;
+}
+.icons:hover{
+    transform: scale(1.2);
+}
+
+.whatsapp{
+    right: 3%;
+}
+.github{
+    right: 1%;
+}
+.instagram{
+    left: 1%;
+}
+.linkedin{
+    left: 3%;
+}
+
+
+@media (min-aspect-ratio: 16/9){
+    .video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
